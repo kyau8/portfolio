@@ -6,16 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  // "repository": {
-  //   "type": "git",
-  //   // "url": "git+https://github.com/kyau8/portfolio.git"
-  // },
   "author": "Kitty Yau",
   "license": "ISC",
-  // "bugs": {
-  //   // "url": "https://github.com/kyau8/portfolio/issues"
-  // },
-  // "homepage": "https://github.com/kyau8/portfolio#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
