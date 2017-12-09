@@ -1,0 +1,19 @@
+/* FOOTER STYLES */
+footer {
+    border-top: 1px solid $mainAccentGreen;
+    background: $darkBackground;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.footerNav li a {
+    color: $white;
+    padding: 0 8px;
+
+}

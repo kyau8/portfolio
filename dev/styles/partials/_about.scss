@@ -1,0 +1,33 @@
+/* ABOUT SECTION STYLES */
+.aboutContents {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    height: 313px;
+    margin: 25px 0;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 385px;
+    padding: 25px 40px;
+    background: $mainAccentGreen;
+}
+
+.aboutText p {
+    font-size: 1.0rem;
+    flex-grow: 1;
+    span {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.aboutText img {
+    flex-grow: 1;
+}

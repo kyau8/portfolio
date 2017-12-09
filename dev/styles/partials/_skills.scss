@@ -1,0 +1,36 @@
+/* SKILLS SECTION STYLES */
+
+.skillsIcons {
+    display: flex;
+    flex-direction: row;
+    text-align: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 0 25px 0;
+}
+
+.skillsIcons li {
+    font-size: 6.8rem;
+    width: 25%;
+    padding: 25px 0 18px 0;
+    text-align: center;
+}
+
+.mainGreen {
+    background: $mainAccentGreen;
+}
+
+.secondGreen {
+    background: $accentGreenTwo;
+}
+
+.thirdGreen {
+    background: $accentGreenThree;
+}
+
+.fourthGreen {
+    background: $accentGreenFour;
+}
+
+

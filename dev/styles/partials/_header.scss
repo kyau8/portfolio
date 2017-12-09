@@ -1,0 +1,89 @@
+/* NAV STYLES */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainNav {
+    padding: 25px 0;
+    width: 100%;
+}
+
+.logo {
+    color: $mainAccentGreen;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.0rem;
+}
+
+.socialNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialNav a {
+    color: $white;
+    font-size: 1.5rem;
+    margin: 0 8px;
+}
+
+/* HEADER STYLES */
+h1, h5 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-weight: 700;
+    color: $white;
+    font-size: 2.8rem;
+}
+
+h5 {
+    color: $gray;
+    font-size: 1.2rem;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.65)),
+    url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
+    background-size: cover;
+    background-position: bottom;
+    // object-fit: cover;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+
+.headerName {
+    margin: 5px 0;
+}
+
+.headerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid $mainAccentGreen;
+    height: 80vh;
+    width: 100%;
+}
+
+.enterButton {
+    background: $mainAccentGreen;
+    font-size: 1.0rem;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border: none;
+}
