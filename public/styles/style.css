@@ -140,7 +140,7 @@ body {
   width: 80%;
   margin: 0 auto; }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif; }
@@ -221,7 +221,7 @@ nav {
           align-items: center; }
 
 .mainNav {
-  padding: 25px 0;
+  padding: 15px 0;
   width: 100%; }
 
 .logo {
@@ -252,8 +252,7 @@ nav {
 
 /* HEADER STYLES */
 h1, h5 {
-  text-transform: uppercase;
-  letter-spacing: 5px; }
+  text-transform: uppercase; }
 
 h1 {
   font-weight: 700;
@@ -328,7 +327,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 313px;
+  height: 308px;
   margin: 25px 0; }
 
 .aboutText {
@@ -344,7 +343,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 385px;
+  width: 384px;
   padding: 25px 40px;
   background: #3adab2; }
 
@@ -384,7 +383,8 @@ header {
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
-  margin: 20px 0; }
+  margin: 20px 0;
+  position: relative; }
 
 .portfolioItem {
   display: -webkit-box;
@@ -403,7 +403,19 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .portfolioItem img {
-    width: 400px; }
+    width: 400px;
+    position: relative;
+    z-index: 30; }
+
+.portfolioItem:nth-child(2)::after {
+  content: "";
+  display: block;
+  height: 1200px;
+  background: url(../../assets/images/brush2.svg) no-repeat;
+  position: absolute;
+  top: 40%;
+  width: 150%;
+  z-index: 1; }
 
 .portfolioText {
   display: -webkit-box;
@@ -419,7 +431,9 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 40%; }
+  width: 40%;
+  position: relative;
+  z-index: 30; }
   .portfolioText p {
     color: rgba(255, 255, 255, 0.966);
     font-size: 1.0rem;
@@ -477,6 +491,59 @@ h4::after {
 /* CONTACT SECTION STYLES */
 .contactSection {
   background: #3d3e3e; }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  font-size: 1.0rem; }
+
+.formInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 10px 0; }
+
+input, textarea {
+  color: rgba(255, 255, 255, 0.966);
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.966);
+  background: #3d3e3e; }
+
+.nameInput, .textInput {
+  color: rgba(255, 255, 255, 0.966); }
+
+.nameInput {
+  margin: 0 5px 0 0; }
+
+.formSubmit {
+  padding: 5px 10px;
+  margin: 20px 0;
+  background: #3adab2;
+  border: none; }
 
 /* FOOTER STYLES */
 footer {

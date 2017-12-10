@@ -13,7 +13,8 @@
     <header>
         <div class="wrapper">
             <nav class="mainNav">
-                <p class="logo">Kitty</p>
+                <img src="../../assets/images/logo.png" alt="">
+                <!-- <p class="logo">Kitty</p> -->
                 <ul class="socialNav">
                     <li><a href=""><i class="fa fa-twitter"></i></a></li>
                     <li><a href=""><i class="fa fa-linkedin"></i> </a></li>
@@ -22,9 +23,9 @@
                 </ul>
             </nav>
             <div class="headerInfo">
-                <h1 class="headerName">I'm Kitty Yau</h1>
+                <h1 class="headerName">Kitty Yau</h1>
                 <h5>Web Developer</h5>
-                <button class="enterButton">See my Portfolio</button>
+                <a href="#portfolio" class="enterButton">See my Portfolio</a>
             </div>
         </div>
     </header>
@@ -40,11 +41,11 @@
                         hydrant of ungeared religions. A feedback is a gander's blanket. Recent controversy aside, the fleshless meat reveals itself
                         as a gaudy objective to those who look.</p>
                     </div>
-                    <img src="assets/images/about.jpg" alt="">
+                    <img src="assets/images/aboutimg.jpg" alt="">
                 </div> 
             </div>
         </section>
-        <section class="portfolioSection">
+        <section class="portfolioSection" id="portfolio">
             <div class="wrapper sectionWrapper">
                 <h2 class="sectionHeader darkHeader">Portfolio</h2>
                 <h3 class="darkSubHeader">Projects</h3>
@@ -99,12 +100,14 @@
             <div class="wrapper sectionWrapper">
                 <h2 class="sectionHeader darkHeader">Contact Me</h2>
                 <h3 class="darkSubHeader">Let's talk!</h3>
-                <form method="post">
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="email">
-                    <input type="text" placeholder="subject">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                    <button type="submit">Contact Me</button>
+                <form action="https://formspress.io/kittyyau8@gmail.com" method="POST">
+                    <div class="formInfo">
+                        <input class="nameInput" type="text" placeholder="Name" name="name">
+                        <input class="textInput" type="text" placeholder="Email" name="_replyto">
+                    </div>
+                    <input type="text" placeholder="Subject" name="_subject">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" name="_message"></textarea>
+                    <input type="submit" value="Contact Me" class="formSubmit"></button>
                 </form>
             </div>
         </section>
@@ -123,10 +126,17 @@
                         <a href=""><i class="fa fa-github"></i></a>
                     </li>
                 </ul>
-                <p class="logo">Kitty</p>
+                <img src="../../assets/images/logo.png" alt="">
             </nav>
         </div>
     </footer>
 </body>
 <script src="https://use.fontawesome.com/2aaa600d1c.js"></script>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+<script src="public/scripts/scripts.js"></script>
 </html>
+
+<!-- Things To Do: -->
+<!-- Write copy -->
+<!-- Fix layout of Project 4 -->
+<!-- Add user authentication to Project 5 -->

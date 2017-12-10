@@ -2,3 +2,46 @@
 .contactSection {
     background: $darkBackground;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    // color: $white;
+    font-size: 1.0rem;
+}
+
+.formInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+input, textarea {
+    color: $white;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $white;
+    background: $darkBackground;
+}
+
+.nameInput, .textInput {
+    color: $white;
+}
+
+.nameInput {
+    margin: 0 5px 0 0;
+}
+
+.formSubmit {
+    padding: 5px 10px;
+    margin: 20px 0;
+    background: $mainAccentGreen;
+    border: none;
+}
+
