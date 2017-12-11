@@ -42,3 +42,15 @@
 .aboutText img {
     flex-grow: 1;
 }
+
+@media(max-width:390px) {
+    .aboutText {
+        width: 95%;
+    }
+    .aboutImg {
+        width: 95%;
+    }
+    .aboutContents {
+        margin-bottom: 30px;
+    }
+}

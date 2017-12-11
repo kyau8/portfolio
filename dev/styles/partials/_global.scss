@@ -96,4 +96,40 @@ h3 {
     }
 }
 
+@media(max-width: 522px) {
+    .sectionHeader {
+        margin-top: 30px;
+    }
+    h3 {
+        font-size: 4.2rem;
+    }
+}
+
+@media(max-width: 490px) {
+    .sectionHeader {
+        margin-top: 24px;
+    }
+    h3 {
+        font-size: 3.8rem;
+    }
+}
+
+@media(max-width: 467px) {
+    .sectionHeader {
+        margin-top: 22px;
+    }
+    h3 {
+        font-size: 3.6rem;
+    }
+}
+
+@media(max-width: 424px) {
+    .sectionHeader {
+        margin-top: 18px;
+    }
+    h3 {
+        font-size: 3.2rem;
+    }
+}
+
 

@@ -76,8 +76,18 @@
 }
 
 @media(max-width: 596px) {
-    .tabletImage {
-        width: 450px;
+    .tabletPortfolio {
+            .tabletImage {
+            width: 450px;
+        }
+    }
+}
+
+@media(max-width: 485px) {
+    .tabletPortfolio {
+        .tabletImage {
+            width: 430px;
+        }
     }
 }
 
@@ -184,7 +194,29 @@ h4::after {
     }
 }
 
+@media(max-width: 465px) {
+    .tabletPortfolio {
+        .tabletImage {
+            width: 400px;
+        }
+    }
+    .projectButtons {
+        justify-content: space-between;
+    }
+    .liveBtn {
+        margin-right: 0;
+    }
+    .gHBtn {
+        margin-right: 0;
+    }
+}
 
-// Gift Generator
-// Add transitions and animations
+@media(max-width: 424px) {
+    .tabletPortfolio {
+        .tabletImage {
+            width: 370px;
+        }
+    }
+}
+
 

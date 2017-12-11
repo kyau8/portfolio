@@ -59,3 +59,12 @@ h4 a {
     }
 }
 
+@media (max-width: 520px) {
+    .email {
+        text-align: center;
+    }
+    .email::after {
+        margin: 0 auto;
+    }
+}
+

@@ -17,6 +17,14 @@
     text-align: center;
 }
 
+@media(max-width: 566px) {
+    .skillsIcons {
+        li {
+            font-size: 5.5rem;
+        }
+    }
+}
+
 .mainGreen {
     background: $mainAccentGreen;
 }
