@@ -241,6 +241,18 @@ h3 {
   h3 {
     font-size: 3.2rem; } }
 
+@media (max-width: 388px) {
+  .sectionHeader {
+    margin-top: 16px; }
+  h3 {
+    font-size: 3.0rem; } }
+
+@media (max-width: 360px) {
+  .sectionHeader {
+    margin-top: 10px; }
+  h3 {
+    font-size: 2.4rem; } }
+
 /* NAV STYLES */
 nav {
   display: -webkit-box;
@@ -643,7 +655,8 @@ h4::after {
   .projectButtons {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    width: 100%; }
   .liveBtn {
     margin-right: 0; }
   .gHBtn {
@@ -652,6 +665,18 @@ h4::after {
 @media (max-width: 424px) {
   .tabletPortfolio .tabletImage {
     width: 370px; } }
+
+@media (max-width: 402px) {
+  .tabletPortfolio .tabletImage {
+    width: 350px; } }
+
+@media (max-width: 360px) {
+  .tabletPortfolio .tabletImage {
+    width: 320px; } }
+
+@media (max-width: 340px) {
+  .tabletPortfolio .tabletImage {
+    width: 300px; } }
 
 /* SKILLS SECTION STYLES */
 .skillsIcons {
@@ -680,6 +705,11 @@ h4::after {
 @media (max-width: 566px) {
   .skillsIcons li {
     font-size: 5.5rem; } }
+
+@media (max-width: 440px) {
+  .skillsIcons li {
+    width: 50%;
+    font-size: 6.5rem; } }
 
 .mainGreen {
   background: #3adab2; }
@@ -744,6 +774,17 @@ input, textarea {
 .nameInput {
   margin: 0 5px 0 0; }
 
+@media (max-width: 500px) {
+  .formInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .textInput {
+    margin-top: 10px; }
+  .nameInput {
+    margin-right: 0; } }
+
 .formSubmit {
   font-family: "Montserrat", sans-serif;
   padding: 5px 10px;
@@ -768,6 +809,10 @@ h4 a {
     text-align: center; }
   .email::after {
     margin: 0 auto; } }
+
+@media (max-width: 330px) {
+  .email {
+    font-size: 1.4rem; } }
 
 /* FOOTER STYLES */
 footer {

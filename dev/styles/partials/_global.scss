@@ -132,4 +132,22 @@ h3 {
     }
 }
 
+@media(max-width: 388px) {
+    .sectionHeader {
+        margin-top: 16px;
+    }
+    h3 {
+        font-size: 3.0rem;
+    }
+}
+
+@media(max-width: 360px) {
+    .sectionHeader {
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+}
+
 

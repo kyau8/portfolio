@@ -25,6 +25,15 @@
     }
 }
 
+@media(max-width: 440px) {
+    .skillsIcons {
+        li {
+            width: 50%;
+            font-size: 6.5rem;
+        }
+    }
+}
+
 .mainGreen {
     background: $mainAccentGreen;
 }

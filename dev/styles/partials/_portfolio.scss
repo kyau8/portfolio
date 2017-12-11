@@ -202,6 +202,7 @@ h4::after {
     }
     .projectButtons {
         justify-content: space-between;
+        width: 100%;
     }
     .liveBtn {
         margin-right: 0;
@@ -215,6 +216,30 @@ h4::after {
     .tabletPortfolio {
         .tabletImage {
             width: 370px;
+        }
+    }
+}
+
+@media(max-width: 402px) {
+    .tabletPortfolio {
+        .tabletImage {
+            width: 350px;
+        }
+    }
+}
+
+@media(max-width: 360px) {
+    .tabletPortfolio {
+        .tabletImage {
+            width: 320px;
+        }
+    }
+}
+
+@media(max-width: 340px) {
+    .tabletPortfolio {
+        .tabletImage {
+            width: 300px;
         }
     }
 }
