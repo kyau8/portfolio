@@ -39,9 +39,15 @@ input, textarea {
 }
 
 .formSubmit {
+    font-family: $primaryFont;
     padding: 5px 10px;
     margin: 20px 0;
     background: $mainAccentGreen;
-    border: none;
+    border: 1px solid $mainAccentGreen;
+    transition: all 0.5s ease-in;
+    &:hover {
+        background: none;
+        color: $mainAccentGreen;
+    }
 }
 

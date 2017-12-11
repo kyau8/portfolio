@@ -34,13 +34,15 @@ button {
 }
 
 /* SECTION HEADER STYLES */
-section,
- {
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
     .wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 }
 

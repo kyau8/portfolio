@@ -4,28 +4,31 @@
     flex-direction: row;
     text-align: center;
     align-items: center;
-    height: 308px;
-    margin: 25px 0;
+    // height: 3px;
+    margin: 25px 0 60px 0;
 }
 
+.aboutIntro {
+    font-size: 1.2rem;
+    color: $black;
+    font-weight: 400;
+    margin: 15px 0;
+}
 .aboutText {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     height: 100%;
-    width: 384px;
-    padding: 25px 40px;
+    width: 390px;
+    padding: 35px 40px;
     background: $mainAccentGreen;
 }
 
 .aboutText p {
     font-size: 1.0rem;
     flex-grow: 1;
-    span {
-        text-transform: uppercase;
-        font-weight: 700;
-    }
+    margin: 5% 0;
 }
 
 .aboutText img {
