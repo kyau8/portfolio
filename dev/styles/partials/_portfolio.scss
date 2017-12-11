@@ -1,6 +1,7 @@
 /* PORTFOLIO SECTION STYLES */
 .portfolioSection {
     background: $darkBackground;
+    overflow: hidden;
 }
 
 .darkSubHeader {
@@ -42,7 +43,7 @@
     position: absolute;
     top: 0;
     left: -40%;
-    width: 150%;
+    width: 140%;
     z-index: 1;
 }
 
@@ -53,7 +54,7 @@
     background: url(../../assets/images/brush2.svg) no-repeat;
     position: absolute;
     top: 40%;
-    width: 150%;
+    width: 140%;
     z-index: 1;
 }
 
@@ -135,8 +136,7 @@ h4::after {
         color: $mainAccentGreen;
     }
 }
-// Portfolio
-// make responsive
+
 
 // Gift Generator
 // Add transitions and animations

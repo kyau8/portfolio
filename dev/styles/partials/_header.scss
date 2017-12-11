@@ -54,18 +54,18 @@ h5 {
 
 header {
     height: 100vh;
-    width: 100vw;
+    // width: 100vw;
     background: linear-gradient(rgba(0, 0, 0, 0.65)),
     url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
     background-size: cover;
     background-position: bottom;
-    // object-fit: cover;
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-    }
+}
+
+header.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 

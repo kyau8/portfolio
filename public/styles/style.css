@@ -140,6 +140,10 @@ body {
   width: 80%;
   margin: 0 auto; }
 
+@media (max-width: 980px) {
+  .wrapper {
+    width: 90%; } }
+
 h1, h2, h3, h4, h5, h6, p, a {
   padding: 0;
   margin: 0;
@@ -272,25 +276,25 @@ h5 {
 
 header {
   height: 100vh;
-  width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65))), url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.65)), url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
   background-size: cover;
   background-position: bottom; }
-  header .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+
+header.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .headerName {
   margin: 5px 0; }
@@ -340,7 +344,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 25px 0 60px 0; }
+  margin: 25px 0 60px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .aboutIntro {
   font-size: 1.2rem;
@@ -379,7 +385,8 @@ header {
 
 /* PORTFOLIO SECTION STYLES */
 .portfolioSection {
-  background: #3d3e3e; }
+  background: #3d3e3e;
+  overflow: hidden; }
 
 .darkSubHeader {
   color: #cfd2d148;
@@ -436,7 +443,7 @@ header {
   position: absolute;
   top: 0;
   left: -40%;
-  width: 150%;
+  width: 140%;
   z-index: 1; }
 
 .portfolioItem:nth-child(2)::after {
@@ -446,7 +453,7 @@ header {
   background: url(../../assets/images/brush2.svg) no-repeat;
   position: absolute;
   top: 40%;
-  width: 150%;
+  width: 140%;
   z-index: 1; }
 
 .portfolioText {
@@ -647,6 +654,13 @@ input, textarea {
   .formSubmit:hover {
     background: none;
     color: #3adab2; }
+
+h4 a {
+  color: #3adab2;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in; }
+  h4 a:hover {
+    color: rgba(228, 196, 54, 0.918); }
 
 /* FOOTER STYLES */
 footer {
