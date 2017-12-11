@@ -87,4 +87,13 @@ h3 {
     margin: 10px 0;
 }
 
+@media(max-width: 564px) {
+    .sectionHeader {
+        margin-top: 32px;
+    }
+    h3 {
+        font-size: 4.4rem;
+    }
+}
+
 

@@ -211,6 +211,12 @@ h3 {
   z-index: -1;
   margin: 10px 0; }
 
+@media (max-width: 564px) {
+  .sectionHeader {
+    margin-top: 32px; }
+  h3 {
+    font-size: 4.4rem; } }
+
 /* NAV STYLES */
 nav {
   display: -webkit-box;
@@ -340,19 +346,25 @@ header.wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 25px 0 60px 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  justify-items: center;
+  margin: 25px 0 60px 0; }
+
+@media (max-width: 867px) {
+  .aboutContents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 .aboutIntro {
   font-size: 1.2rem;
   color: black;
   font-weight: 400;
-  margin: 15px 0; }
+  margin: 15px 0;
+  text-align: center; }
 
 .aboutText {
   display: -webkit-box;
@@ -391,6 +403,9 @@ header.wrapper {
 .darkSubHeader {
   color: #cfd2d148;
   z-index: 0; }
+
+.tabletPortfolio {
+  display: none; }
 
 .portfolioContent {
   display: -webkit-box;
@@ -434,6 +449,36 @@ header.wrapper {
     .portfolioItem img:hover {
       -webkit-transform: translate(0, -20px);
               transform: translate(0, -20px); }
+
+@media (max-width: 1141px) {
+  .portfolioItem img {
+    width: 400px; } }
+
+@media (max-width: 865px) {
+  .mainPortfolio {
+    display: none; }
+  .tabletPortfolio {
+    display: block; }
+    .tabletPortfolio .tabletImage {
+      width: 550px; }
+    .tabletPortfolio .portfolioText {
+      width: 75%;
+      margin: 0; }
+    .tabletPortfolio .portfolioItem.item::before {
+      content: "";
+      width: 100%;
+      height: 3px;
+      border-bottom: 2px double rgba(58, 218, 178, 0.5);
+      border-top: 2px solid rgba(58, 218, 178, 0.5);
+      margin-top: 25px; } }
+
+@media (max-width: 650px) {
+  .portfolioText {
+    width: 90%; } }
+
+@media (max-width: 596px) {
+  .tabletImage {
+    width: 450px; } }
 
 .portfolioItem:nth-child(1)::after {
   content: "";

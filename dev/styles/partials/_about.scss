@@ -2,11 +2,16 @@
 .aboutContents {
     display: flex;
     flex-direction: row;
-    text-align: center;
     align-items: center;
-    // height: 3px;
+    justify-items: center;
     margin: 25px 0 60px 0;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+}
+
+@media(max-width:867px) {
+    .aboutContents {
+        flex-direction: column;
+    }
 }
 
 .aboutIntro {
@@ -14,7 +19,9 @@
     color: $black;
     font-weight: 400;
     margin: 15px 0;
+    text-align: center;
 }
+
 .aboutText {
     display: flex;
     flex-direction: column;
