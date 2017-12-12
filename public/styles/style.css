@@ -273,11 +273,9 @@ nav {
   padding: 15px 0;
   width: 100%; }
 
-.logo {
-  color: #3adab2;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2.0rem; }
+@media (max-width: 850px) {
+  .mainNav {
+    padding: 10px 0; } }
 
 .socialNav {
   display: -webkit-box;
@@ -388,13 +386,6 @@ header.wrapper {
   justify-items: center;
   margin: 25px 0 60px 0; }
 
-@media (max-width: 867px) {
-  .aboutContents {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
-
 .aboutIntro {
   font-size: 1.2rem;
   color: black;
@@ -431,13 +422,50 @@ header.wrapper {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-@media (max-width: 390px) {
-  .aboutText {
-    width: 95%; }
-  .aboutImg {
-    width: 95%; }
+@media (max-width: 867px) {
   .aboutContents {
-    margin-bottom: 30px; } }
+    position: relative;
+    width: 100%;
+    height: 382px; }
+  .aboutText {
+    position: absolute;
+    z-index: 30;
+    left: 20px; }
+  .aboutImg {
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    right: 20px; } }
+
+@media (max-width: 763px) {
+  .aboutText {
+    left: 0; }
+  .aboutImg {
+    right: 0; } }
+
+@media (max-width: 709px) {
+  .aboutContents {
+    overflow: hidden; }
+  .aboutImg {
+    right: -100px; } }
+
+@media (max-width: 588px) {
+  .aboutContents {
+    overflow: hidden; }
+  .aboutImg {
+    right: -150px; } }
+
+@media (max-width: 515px) {
+  .aboutText {
+    width: 100%;
+    height: auto; }
+  .aboutImg {
+    display: none; } }
+
+@media (max-width: 390px) {
+  .aboutContents {
+    margin-bottom: 30px;
+    height: 460px; } }
 
 /* PORTFOLIO SECTION STYLES */
 .portfolioSection {
