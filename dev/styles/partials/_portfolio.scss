@@ -60,7 +60,7 @@
         }
         .portfolioItem.item::before {
             content: "";
-            width: 100%;
+            width: 90%;
             height: 3px;
             border-bottom: 2px double $accentGreenFour;
             border-top: 2px solid $accentGreenFour;
