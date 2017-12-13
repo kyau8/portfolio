@@ -315,8 +315,9 @@ h5 {
 
 header {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65))), url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.65)), url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
+  background-image: url(../../assets/images/header-fallback.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65))), url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65)), url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
   background-size: cover;
   background-position: bottom; }
 
@@ -550,13 +551,15 @@ header.wrapper {
     color: rgba(255, 255, 255, 0.966);
     font-size: 1.0rem;
     line-height: 25px;
-    padding: 5px 0; }
+    padding: 5px 0;
+    width: 100%; }
 
 h4 {
   color: rgba(255, 255, 255, 0.966);
   text-transform: uppercase;
   font-size: 1.6rem;
-  margin: 10px 0; }
+  margin: 10px 0;
+  width: 100%; }
 
 h4::after {
   content: "";
@@ -745,6 +748,9 @@ h4 a {
   transition: all 0.5s ease-in; }
   h4 a:hover {
     color: rgba(228, 196, 54, 0.918); }
+
+.emailBox {
+  margin: 0 auto; }
 
 @media (max-width: 600px) {
   .email {

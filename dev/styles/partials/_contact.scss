@@ -29,20 +29,6 @@ input, textarea {
     }   
 }
 
-// @media(max-width: 500px) {
-//     .formInfo {
-//         flex-direction: column;
-//     }
-//     .textInput {
-//         margin-top: 10px;
-//         width: 100%;
-//     }
-//     .nameInput {
-//         margin-right: 0;
-//         width: 100%;
-//     }
-// }
-
 .formSubmit {
     color: $mainAccentGreen;
     font-family: $primaryFont;
@@ -57,13 +43,20 @@ input, textarea {
     }
 }
 
-h4 a {
-    color:$mainAccentGreen;
-    transition: all 0.5s ease-in;
-    &:hover {
-        color: rgba(228, 196, 54, 0.918);
+h4 {
+    a {
+        color:$mainAccentGreen;
+        transition: all 0.5s ease-in;
+        &:hover {
+            color: rgba(228, 196, 54, 0.918);
+        }
     }
 }
+
+.emailBox {
+    margin: 0 auto;
+}
+
 
 @media (max-width: 600px) {
     .email {

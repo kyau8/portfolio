@@ -9,6 +9,7 @@
     <link rel="icon" href="assets/images/logo-small.png">
     <link rel="stylesheet" href="public/styles/style.css">
     <title>Kitty Yau | Web Developer</title>
+    <!-- Header fallback image credits to Daniil Silantev at Unsplash -->
 </head>
 <body>
     <header>
@@ -33,7 +34,6 @@
         <section>
             <div class="wrapper sectionWrapper">
                 <h2 class="lightHeader aboutHeader">About Me</h2>
-                <!-- <p class="aboutIntro"><span>Hi</span>, I'm Kitty, a front-end web developer based in Toronto.</p> -->
                 <div class="aboutContents">
                     <div class="aboutText">
                         <p>Hi - I'm Kitty, a front-end web developer based in Markham.</p>
@@ -212,7 +212,9 @@
         <section class="contactSection">
             <div class="wrapper sectionWrapper">
                 <h2 class="darkSubHeader">Let's Talk!</h2>
-                <h4 class="email">Email Me: <a href="mailto:hello@kittyyau.com">hello@kittyyau.com</a></h4>
+                <div class="emailBox">
+                    <h4 class="email">Email Me: <a href="mailto:hello@kittyyau.com">hello@kittyyau.com</a></h4>
+                </div>
                 <form action="https://formspree.io/hello@kittyyau.com" method="POST">
                     <input class="nameInput" type="text" placeholder="Name" name="name">
                     <input class="textInput" type="text" placeholder="Email" name="_replyto">

@@ -41,7 +41,6 @@ nav {
 /* HEADER STYLES */
 h1, h5 {
     text-transform: uppercase;
-    // letter-spacing: 5px;
 }
 
 h1 {
@@ -58,8 +57,8 @@ h5 {
 
 header {
     height: 100vh;
-    // width: 100vw;
-    background: linear-gradient(rgba(0, 0, 0, 0.65)),
+    background-image: url(../../assets/images/header-fallback.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65)),
     url(../../assets/images/nyc-brooklynbridge-kittyyau.jpg);
     background-size: cover;
     background-position: bottom;
@@ -89,7 +88,6 @@ header.wrapper {
 
 .enterButton {
     color: $mainAccentGreen;
-    // background: rgba(26, 24, 24, 0.514);
     text-transform: uppercase;
     font-size: 1.0rem;
     padding: 10px 15px;
