@@ -8,34 +8,23 @@ form {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
-    // color: $white;
+    width: 500px;
     font-size: 1.0rem;
 }
 
-.formInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-}
-
 input, textarea {
+    font-family: $primaryFont;
+    text-transform: uppercase;
     color: $white;
     width: 100%;
     border: none;
     border-bottom: 1px solid $white;
     background: $darkBackground;
+    padding: 1px;
 }
 
-.nameInput, .textInput {
-    color: $white;
-}
-
-.nameInput {
-    margin: 0 5px 0 0;
+form {
+    width: 90%;
 }
 
 @media(max-width: 500px) {
@@ -44,22 +33,25 @@ input, textarea {
     }
     .textInput {
         margin-top: 10px;
+        width: 100%;
     }
     .nameInput {
         margin-right: 0;
+        width: 100%;
     }
 }
 
 .formSubmit {
+    color: $mainAccentGreen;
     font-family: $primaryFont;
+    font-weight: bold;
     padding: 5px 10px;
     margin: 20px 0;
-    background: $mainAccentGreen;
-    border: 1px solid $mainAccentGreen;
+    border: 2px solid $mainAccentGreen;
     transition: all 0.5s ease-in;
     &:hover {
-        background: none;
-        color: $mainAccentGreen;
+        border-color: $white;
+        color: $white;
     }
 }
 

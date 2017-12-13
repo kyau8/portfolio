@@ -6,22 +6,21 @@
     text-align: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     margin: 10px 0 25px 0;
 }
 
 .skillsIcons li {
-    font-size: 6.8rem;
-    width: 25%;
-    padding: 25px 0 18px 0;
+    font-size: 4.0rem;
+    width: 20%;
+    padding: 10px 0;
     text-align: center;
+    color: $darkBackground;
 }
 
-@media(max-width: 566px) {
+@media(max-width: 517px) {
     .skillsIcons {
-        li {
-            font-size: 5.5rem;
-        }
+        width: 98%;
     }
 }
 
@@ -34,20 +33,20 @@
     }
 }
 
-.mainGreen {
-    background: $mainAccentGreen;
-}
+// .mainGreen {
+//     background: $mainAccentGreen;
+// }
 
-.secondGreen {
-    background: $accentGreenTwo;
-}
+// .secondGreen {
+//     background: $accentGreenTwo;
+// }
 
-.thirdGreen {
-    background: $accentGreenThree;
-}
+// .thirdGreen {
+//     background: $accentGreenThree;
+// }
 
-.fourthGreen {
-    background: $accentGreenFour;
-}
+// .fourthGreen {
+//     background: $accentGreenFour;
+// }
 
 

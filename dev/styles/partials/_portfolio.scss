@@ -127,6 +127,7 @@
     p {
         color: $white;
         font-size: 1.0rem;
+        line-height: 25px;
         padding: 5px 0;
     }
 }
@@ -178,19 +179,18 @@ h4::after {
 }
 
 .liveBtn, .gHBtn {
-    color: $white;
     text-transform: uppercase;
     font-size: 1.0rem;
     padding: 15px 10px;
-    border: 1px solid $mainAccentGreen;
-    background: $mainAccentGreen;
+    border: 1.5px solid $mainAccentGreen;
+    color: $mainAccentGreen;
     margin: 1rem 1rem 1rem 0;
     transition: all 0.5s ease-in-out;
     font-weight: bold;
     &:hover {
-        background: none;
+        color: $white;
+        border-color: $white;
         transform: translate(0,-10px);
-        color: $mainAccentGreen;
     }
 }
 

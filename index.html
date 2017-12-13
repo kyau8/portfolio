@@ -24,7 +24,7 @@
             </nav>
             <div class="headerInfo">
                 <h1 class="headerName">Kitty Yau</h1>
-                <h5>Web Developer</h5>
+                <h5 class="head">Web Developer</h5>
                 <a href="#portfolio" class="enterButton">See my Portfolio</a>
             </div>
         </div>
@@ -32,26 +32,29 @@
     <main>
         <section>
             <div class="wrapper sectionWrapper">
-                <h2 class="sectionHeader lightHeader">About Me</h2>
-                <h3 class>Biography</h3>
-                <p class="aboutIntro"><span>Hi</span>, I'm Kitty, a front-end web developer based in Toronto.</p>
+                <h2 class="lightHeader">About Me</h2>
+                <!-- <p class="aboutIntro"><span>Hi</span>, I'm Kitty, a front-end web developer based in Toronto.</p> -->
                 <div class="aboutContents">
                     <div class="aboutText">
+                        <p>Hi - I'm Kitty, a front-end web developer based in Markham.</p>
                         <p>I'm passionate about problem solving and am not one to shy away from new challenges. My background in linguistics highlights my fascination with languages, both programming or not, and I am always excited to explore what can be accomplished with the powerful tools at our disposal.</p>
                         <p>When I'm not coding, you can probably find me skipping along a hiking trail, binge-watching Gordon Ramsey videos, or wandering around with my nose in a book.</p>
                     </div>
-                    <img class="aboutImg" src="assets/images/aboutimg.jpg" alt="A picture of a girl walking along a snowy path, looking to her right.">
+                    <div class="imgContainer">
+                        <img class="aboutImg" src="assets/images/about-me.jpg" alt="A picture of Kitty walking along a snowy path, looking to her right.">
+                    </div>
                 </div> 
             </div>
         </section>
         <section class="portfolioSection" id="portfolio">
             <div class="wrapper sectionWrapper">
-                <h2 class="sectionHeader darkHeader">Portfolio</h2>
-                <h3 class="darkSubHeader">Projects</h3>
+                <h2 class>Portfolio</h2>
                 <div class="mainPortfolio">
                     <div class="portfolioContent">
                         <div class="portfolioItem">
-                            <img src="../../assets/images/wordplay-mockup.png" alt="The front view of an iMac screen depicting a word game web app called 'Wordplay.">
+                            <a href="http://www.kittyyau.com/wordplay" target="_blank">
+                                <img src="../../assets/images/wordplay-mockup.png" alt="The front view of an iMac screen depicting a word game web app called 'Wordplay.">
+                            </a>
                             <div class="portfolioText">
                                 <h4>\wərd\play</h4>
                                 <h5 class="portfolioTitle">JavaScript Web App</h5>
@@ -91,10 +94,14 @@
                                     <a class="gHBtn" href="https://github.com/kyau8/dont-sweat-it-project5" target="_blank">View on GitHub</a>
                                 </div>
                             </div>
-                            <img src="../../assets/images/dont-sweat-it-mockup.png" alt="The front view of an iMac screen depicting a to-do web app called 'Don't Sweat It.">
+                            <a href="http://www.kittyyau.com/dont-sweat-it" target="_blank">
+                                <img src="../../assets/images/dont-sweat-it-mockup.png" alt="The front view of an iMac screen depicting a to-do web app called 'Don't Sweat It.">
+                            </a>
                         </div>
                         <div class="portfolioItem">
-                            <img src="../../assets/images/i-didnt-forget-mockup.png" alt="The front view of an iMac screen depicting a web app called 'I didn't forget your birthday' Gift Generator.">
+                            <a href="http://www.kittyyau.com/i-didnt-forget-your-birthday" target="_blank">
+                                <img src="../../assets/images/i-didnt-forget-mockup.png" alt="The front view of an iMac screen depicting a web app called 'I didn't forget your birthday' Gift Generator.">
+                            </a>
                             <div class="portfolioText">
                                 <h4>'I didn't forget your birthday...' Gift Generator</h4>
                                 <h5 class="portfolioTitle">JavaScript Web App</h5>
@@ -184,33 +191,31 @@
             </div>
         </section>
         <section>
-            <div class="wrapper sectionWrapper">
-                <h2 class="sectionHeader">Skills</h2>
-                <h3>Experiences</h3>
+            <div class="wrapper sectionWrapper skills">
+                <h2 class="lightHeader">Skills</h2>
                 <ul class="skillsIcons">
-                    <li class="icon mainGreen"> <i class="devicon-javascript-plain"></i>
+                    <li class="icon"> <i class="devicon-javascript-plain"></i>
                     </li>
-                    <li class="icon secondGreen"><i class="devicon-html5-plain"></i></li>
-                    <li class="icon thirdGreen"><i class="devicon-css3-plain"></i></li>
-                    <li class="icon fourthGreen"><i class="devicon-sass-original"></i></li>
-                    <li class="icon fourthGreen"><i class="devicon-jquery-plain"></i></li>
-                    <li class="icon thirdGreen"><i class="devicon-gulp-plain"></i></li>
-                    <li class="icon secondGreen"><i class="devicon-react-original"></i>
+                    <li class="icon"><i class="devicon-html5-plain"></i></li>
+                    <li class="icon"><i class="devicon-css3-plain"></i></li>
+                    <li class="icon"><i class="devicon-sass-original"></i></li>
+                    <li class="icon"><i class="devicon-jquery-plain"></i></li>
+                    <li class="icon"><i class="devicon-gulp-plain"></i></li>
+                    <li class="icon"><i class="devicon-react-original"></i>
                     </li>
-                    <li class="icon mainGreen"><i class="devicon-github-plain"></i></li>
+                    <li class="icon"><i class="devicon-github-plain"></i></li>
+                    <li class="icon"><i class="devicon-git-plain"></i></li>
+                    <li class="icon"><i class="devicon-photoshop-line"></i></li>
                 </ul>
             </div>
         </section>
         <section class="contactSection">
             <div class="wrapper sectionWrapper">
-                <h2 class="sectionHeader darkHeader">Contact Me</h2>
-                <h3 class="darkSubHeader">Let's talk!</h3>
+                <h2 class="darkSubHeader">Let's Talk!</h2>
                 <h4 class="email">Email Me: <a href="mailto:hello@kittyyau.com">hello@kittyyau.com</a></h4>
                 <form action="https://formspree.io/hello@kittyyau.com" method="POST">
-                    <div class="formInfo">
-                        <input class="nameInput" type="text" placeholder="Name" name="name">
-                        <input class="textInput" type="text" placeholder="Email" name="_replyto">
-                    </div>
+                    <input class="nameInput" type="text" placeholder="Name" name="name">
+                    <input class="textInput" type="text" placeholder="Email" name="_replyto">
                     <input type="text" placeholder="Subject" name="_subject">
                     <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" name="_message"></textarea>
                     <input type="submit" value="Contact Me" class="formSubmit"></button>

@@ -24,6 +24,10 @@ nav {
     align-items: center;
 }
 
+.head {
+    color: $white;
+}
+
 .socialNav a {
     color: $white;
     font-size: 1.5rem;
@@ -49,6 +53,7 @@ h1 {
 h5 {
     color: $gray;
     font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 header {
@@ -78,21 +83,21 @@ header.wrapper {
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 1px solid $mainAccentGreen;
     height: 80vh;
     width: 100%;
 }
 
 .enterButton {
-    color: $white;
-    background: $mainAccentGreen;
+    color: $mainAccentGreen;
+    // background: rgba(26, 24, 24, 0.514);
+    text-transform: uppercase;
     font-size: 1.0rem;
     padding: 10px 15px;
     margin: 20px 0;
-    border: 1px solid $mainAccentGreen;
+    border: 1.5px solid $mainAccentGreen;
     transition: all 0.5s ease-in;
     &:hover {
-        background: none;
-        color: $mainAccentGreen;
+        color: $white;
+        border-color: $white;
     }
 }
