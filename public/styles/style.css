@@ -373,7 +373,8 @@ header.wrapper {
 .aboutContents {
   position: relative;
   margin: 0 auto 15px auto;
-  width: 80%; }
+  width: 80%;
+  max-width: 830px; }
 
 .aboutText {
   margin: 1.5rem 0;
@@ -398,6 +399,9 @@ header.wrapper {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%; }
+
+.aboutHeader {
+  margin-bottom: 2.5rem; }
 
 @media (max-width: 1120px) {
   .aboutContents {
@@ -718,21 +722,9 @@ input, textarea {
   background: #3d3e3e;
   padding: 1px; }
 
-form {
-  width: 90%; }
-
-@media (max-width: 500px) {
-  .formInfo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .textInput {
-    margin-top: 10px;
-    width: 100%; }
-  .nameInput {
-    margin-right: 0;
-    width: 100%; } }
+@media (max-width: 700px) {
+  form {
+    width: 90%; } }
 
 .formSubmit {
   color: #3adab2;
@@ -754,7 +746,7 @@ h4 a {
   h4 a:hover {
     color: rgba(228, 196, 54, 0.918); }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .email {
     text-align: center; }
   .email::after {
@@ -792,3 +784,14 @@ footer {
   transition: color 0.5s ease-in; }
   .footerNav li a:hover {
     color: #3adab2; }
+
+.copyrightText {
+  color: rgba(255, 255, 255, 0.966);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-align: center; }
+
+@media (max-width: 700px) {
+  .copyrightText {
+    width: 30%;
+    font-size: 0.6rem; } }

@@ -23,23 +23,25 @@ input, textarea {
     padding: 1px;
 }
 
-form {
-    width: 90%;
+@media(max-width: 700px) {
+    form {
+        width: 90%;
+    }   
 }
 
-@media(max-width: 500px) {
-    .formInfo {
-        flex-direction: column;
-    }
-    .textInput {
-        margin-top: 10px;
-        width: 100%;
-    }
-    .nameInput {
-        margin-right: 0;
-        width: 100%;
-    }
-}
+// @media(max-width: 500px) {
+//     .formInfo {
+//         flex-direction: column;
+//     }
+//     .textInput {
+//         margin-top: 10px;
+//         width: 100%;
+//     }
+//     .nameInput {
+//         margin-right: 0;
+//         width: 100%;
+//     }
+// }
 
 .formSubmit {
     color: $mainAccentGreen;
@@ -63,7 +65,7 @@ h4 a {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
     .email {
         text-align: center;
     }
