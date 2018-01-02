@@ -84,14 +84,16 @@ header.wrapper {
     position: relative;
     height: 80vh;
     width: 100%;
+    border: 1.5px solid $mainAccentGreen;
 }
 
 .enterButton {
+    font-weight: bold;
     color: $mainAccentGreen;
     text-transform: uppercase;
     font-size: 1.0rem;
     padding: 10px 15px;
-    margin: 20px 0;
+    margin: 10px 0;
     border: 1.5px solid $mainAccentGreen;
     transition: all 0.5s ease-in;
     &:hover {

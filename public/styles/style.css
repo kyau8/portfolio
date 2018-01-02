@@ -355,14 +355,16 @@ header.wrapper {
           align-items: center;
   position: relative;
   height: 80vh;
-  width: 100%; }
+  width: 100%;
+  border: 1.5px solid #3adab2; }
 
 .enterButton {
+  font-weight: bold;
   color: #3adab2;
   text-transform: uppercase;
   font-size: 1.0rem;
   padding: 10px 15px;
-  margin: 20px 0;
+  margin: 10px 0;
   border: 1.5px solid #3adab2;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in; }
@@ -385,8 +387,34 @@ header.wrapper {
   background: #3adab2;
   font-size: 1.0rem; }
   .aboutText p {
-    margin: 0.5rem 1.0rem 0.5rem 0;
-    width: 50%; }
+    margin: 0.5rem 0;
+    width: 100%; }
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%; }
+
+.aboutText a {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.966);
+  text-transform: uppercase;
+  border: 1.5px solid rgba(255, 255, 255, 0.966);
+  padding: 0.5rem 1.0rem;
+  margin: 0.5rem 0;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in; }
+  .aboutText a:hover {
+    border-color: #3d3e3e;
+    color: #3d3e3e; }
 
 .imgContainer {
   position: absolute;
@@ -415,9 +443,10 @@ header.wrapper {
 @media (max-width: 450px) {
   .imgContainer {
     display: none; }
-  .aboutText p {
-    width: 100%;
-    margin: 0.5rem; } }
+  .text {
+    width: 100%; }
+    .text p {
+      margin: 0.5rem; } }
 
 /* PORTFOLIO SECTION STYLES */
 .portfolioSection {
