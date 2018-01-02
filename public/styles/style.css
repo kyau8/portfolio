@@ -165,8 +165,7 @@ button {
 
 /* SECTION HEADER STYLES */
 section {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding: 20px 0 60px 0; }
   section .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -197,6 +196,9 @@ h2 {
 
 .lightHeader {
   color: #a8a7a7; }
+
+.title {
+  margin: 2.5rem 0; }
 
 @media (max-width: 564px) {
   .sectionHeader {
@@ -428,9 +430,6 @@ header.wrapper {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%; }
-
-.aboutHeader {
-  margin-bottom: 2.5rem; }
 
 @media (max-width: 1120px) {
   .aboutContents {
