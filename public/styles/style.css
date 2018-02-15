@@ -514,13 +514,34 @@ header.wrapper {
   width: 140%;
   z-index: 1; }
 
+.portfolioItem:nth-child(4)::after {
+  content: "";
+  display: block;
+  height: 1200px;
+  background: url(../../assets/images/brush2_flip.svg) no-repeat;
+  position: absolute;
+  top: 60%;
+  left: -40%;
+  width: 140%;
+  z-index: 1; }
+
 .portfolioItem:nth-child(2)::after {
   content: "";
   display: block;
   height: 1200px;
   background: url(../../assets/images/brush2.svg) no-repeat;
   position: absolute;
-  top: 40%;
+  top: 30%;
+  width: 140%;
+  z-index: 1; }
+
+.portfolioItem:nth-child(6)::after {
+  content: "";
+  display: block;
+  height: 1200px;
+  background: url(../../assets/images/brush2.svg) no-repeat;
+  position: absolute;
+  top: 80%;
   width: 140%;
   z-index: 1; }
 
